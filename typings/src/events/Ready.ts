@@ -1,6 +1,6 @@
-import AvonEvent from "../base/AvonEvent.js";
+import ALiENEvent from "../base/ALiENEvent.js";
 
-export default class Ready extends AvonEvent {
+export default class Ready extends ALiENEvent {
   [x: string]: any;
   constructor(client: any) {
     super(client);
