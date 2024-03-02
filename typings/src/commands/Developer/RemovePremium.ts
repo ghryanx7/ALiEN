@@ -1,8 +1,8 @@
 import { EmbedBuilder } from "discord.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import { removeUserPrem } from "../../api/db/premium.js";
 
-export default class RemovePremium extends AvonCommand {
+export default class RemovePremium extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "removePremium";
