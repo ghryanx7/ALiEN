@@ -1,6 +1,6 @@
 import { Collection } from "discord.js";
 import * as fs from "fs";
-export default class AvonCommands {
+export default class ALiENCommands {
   client: any;
   loaded: boolean;
   messages: Collection<unknown, unknown>;
@@ -16,10 +16,10 @@ export default class AvonCommands {
         .filter((x) => x.endsWith(".js"))
         .forEach(async (file) => {
           let command = (await import(`../commands/${dir}/${file}`)).default;
-          let AvonCommand = new command(this.client);
-          this.messages.set(AvonCommand.name, AvonCommand);
+          let ALiENCommand = new command(this.client);
+          this.messages.set(ALiENCommand.name, ALiENCommand);
           this.client.logger.debug(
-            `Command Loaded: ${AvonCommand.name} loaded!`
+            `Command Loaded: ${ALiENCommand.name} loaded!`
           );
         });
     });
