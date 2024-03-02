@@ -2,12 +2,12 @@ import { PermissionFlagsBits, WebhookClient } from "discord.js";
 import { checkRihan, manageMent } from "../api/db/management.js";
 import { getPrefix } from "../api/db/prefix.js";
 import { removeUserPrem } from "../api/db/premium.js";
-import AvonConfig from "../config/Config.js";
+import ALiENConfig from "../config/Config.js";
 import Topgg from "@top-gg/sdk";
-const Config = new AvonConfig();
+const Config = new ALiENConfig();
 let voteApi = new Topgg.Api(Config.voteApi);
-import AvonEvent from "../base/AvonEvent.js";
-export default class CommandHandler extends AvonEvent {
+import ALiENEvent from "../base/ALiENEvent.js";
+export default class CommandHandler extends ALiENEvent {
   run: any;
   constructor(client: any) {
     super(client);
