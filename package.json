@@ -40,7 +40,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Punit9464/Avon.git"
+    "url": "git+https://github.com/ghryanx7/ALiEN.git"
   },
   "keywords": [
     "discord",
@@ -55,10 +55,10 @@
     "shoukaku",
     "kazagumo"
   ],
-  "author": "Punit Kumar",
+  "author": "RYAN",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Punit9464/Avon/issues"
+    "url": "https://github.com/ghryanx7/ALiEN/issues"
   },
-  "homepage": "https://github.com/Punit9464/Avon#readme"
+  "homepage": "https://github.com/ghryanx7/LiEN#readme"
 }
