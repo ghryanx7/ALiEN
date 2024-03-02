@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Karaoke extends AvonCommand {
+export default class Karaoke extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "karaoke";
