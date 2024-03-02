@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Treblebass extends AvonCommand {
+export default class Treblebass extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "treblebass";
