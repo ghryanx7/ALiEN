@@ -1,8 +1,8 @@
 import axios from "axios";
-import AvonDispatcher from "../../api/Dispatcher.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENDispatcher from "../../api/Dispatcher.js";
+import ALiENCommand from "../../base/LiENCommand.js";
 
-export default class AvonPlay extends AvonCommand {
+export default class ALiENPlay extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "play";
@@ -34,7 +34,7 @@ export default class AvonPlay extends AvonCommand {
       if (this.client.utils.checkUrl(query) === true) {
         if (query.match(this.client.spotify.spotifyPattern)) {
           await this.client.spotify.requestToken();
-          let node = await this.client.spotify.nodes.get("Avon");
+          let node = await this.client.spotify.nodes.get("ALiEN");
           let result = await node.load(query);
           if (result.loadType === `PLAYLIST_LOADED`) {
             let dispatcher = this.client.api.get(message.guildId);
@@ -61,7 +61,7 @@ export default class AvonPlay extends AvonCommand {
                 shardId: message.guild.shardId,
                 deaf: true,
               });
-              dispatcher = new AvonDispatcher(
+              dispatcher = new ALiENDispatcher(
                 this.client,
                 message.guild,
                 message.channel,
@@ -151,7 +151,7 @@ export default class AvonPlay extends AvonCommand {
               channelId: message.member.voice.channel.id,
               deaf: true,
             });
-            dispatcher = new AvonDispatcher(
+            dispatcher = new ALiENDispatcher(
               this.client,
               message.guild,
               message.channel,
@@ -282,7 +282,7 @@ export default class AvonPlay extends AvonCommand {
         });
 
         collector.on("collect", async (interaction: any) => {
-          if (interaction.customId === `avon_default_search`) {
+          if (interaction.customId === `alien_default_search`) {
             let result = await node.rest.resolve(`ytsearch:${query}`);
             if (!result.tracks.length)
               return interaction.update({
@@ -323,7 +323,7 @@ export default class AvonPlay extends AvonCommand {
                 components: [],
               });
             }
-          } else if (interaction.customId === `avon_spoti_search`) {
+          } else if (interaction.customId === `alien_spoti_search`) {
             let result: any;
             this.client.kazagumo
               .search(query, {
@@ -345,7 +345,7 @@ export default class AvonPlay extends AvonCommand {
 
                 let track = result.tracks[0];
                 await this.client.spotify.requestToken();
-                let spoti = this.client.spotify.nodes.get("Avon");
+                let spoti = this.client.spotify.nodes.get("ALiEN");
                 let res = await spoti.load(track.uri);
                 if (
                   res.loadType === `LOAD_FAILED` ||
@@ -389,7 +389,7 @@ export default class AvonPlay extends AvonCommand {
                   });
                 }
               });
-          } else if (interaction.customId === `avon_deez_search`) {
+          } else if (interaction.customId === `alien_deez_search`) {
             // let result = await this.client.kazagumo.search(query, {
             //   engine: `deezer`,
             //   requester: message.author,
@@ -431,7 +431,7 @@ export default class AvonPlay extends AvonCommand {
             //   ],
             //   components: [],
             // });
-          } else if (interaction.customId === `avon_sound_search`) {
+          } else if (interaction.customId === `alien_sound_search`) {
             let node = this.client.shoukaku.getNode();
             let res = await node.rest.resolve(`scsearch:${query}`);
             if (!res.tracks.length)
