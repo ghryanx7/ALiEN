@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Invite extends AvonCommand {
+export default class Invite extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "invite";
@@ -18,7 +18,7 @@ export default class Invite extends AvonCommand {
               `Invite Me`,
               null,
               null,
-              `https://discord.com/api/oauth2/authorize?client_id=904317141866647592&permissions=8&scope=applications.commands%20bot`,
+              `https://discord.com/api/oauth2/authorize?client_id=1149253305873207340&permissions=8&scope=applications.commands%20bot`,
               this.client.emoji.invite
             ),
             this.client.utils.button(
