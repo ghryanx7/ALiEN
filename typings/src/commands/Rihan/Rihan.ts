@@ -4,9 +4,9 @@ import {
   listRihan,
   removeRihan,
 } from "../../api/db/management.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Rihan extends AvonCommand {
+export default class Rihan extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "rihan";
