@@ -3,7 +3,7 @@ import { Connectors } from "shoukaku";
 import Deezer from "kazagumo-deezer";
 import Spotify from "kazagumo-spotify";
 
-export default class AvonKazagumo extends Kazagumo {
+export default class ALiENKazagumo extends Kazagumo {
   constructor(client: any) {
     super(
       {
