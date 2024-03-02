@@ -1,7 +1,7 @@
-import AvonCommand from "../../base/AvonCommand.js";
-import AvonPlayer from "../../base/AvonPlayer.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
+import ALiENPlayer from "../../base/AvonPlayer.js";
 
-export default class NowPlaying extends AvonCommand {
+export default class NowPlaying extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "nowplaying";
