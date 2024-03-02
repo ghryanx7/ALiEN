@@ -2,7 +2,7 @@ import { Collection } from "discord.js";
 import { get247Set, getAutoplay } from "./db/settings.js";
 import { times } from "lodash";
 import { getDjChannel } from "./db/dj.js";
-export default class AvonDispatcher {
+export default class ALiENDispatcher {
   public client: any;
   public guild: any;
   public channel: any;
