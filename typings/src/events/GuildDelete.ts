@@ -1,7 +1,7 @@
 import { WebhookClient } from "discord.js";
-import AvonEvent from "../base/AvonEvent.js";
+import ALiENEvent from "../base/ALiENEvent.js";
 
-export default class GuildDelete extends AvonEvent {
+export default class GuildDelete extends ALiENEvent {
   [x: string]: any;
   constructor(client: any) {
     super(client);
