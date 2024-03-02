@@ -1,6 +1,6 @@
 import { Connectors, Shoukaku } from "shoukaku";
 import reconnection from "./Reconnection.js";
-export default class AvonShoukaku extends Shoukaku {
+export default class ALiENShoukaku extends Shoukaku {
   constructor(client: any) {
     super(new Connectors.DiscordJS(client), client.config.nodes, {
       reconnectTries: 2,
