@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Distortion extends AvonCommand {
+export default class Distortion extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "distortion";
