@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class NightCore extends AvonCommand {
+export default class NightCore extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "nightcore";
