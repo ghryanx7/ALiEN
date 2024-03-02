@@ -1,7 +1,7 @@
 import chalk from "chalk";
 import moment from "moment";
 const time = `[${moment().utcOffset("+5:30").format(`DD-MM-YYYY | hh:mm:ss`)}]`;
-export default class AvonLogger {
+export default class ALiENLogger {
   client: any;
   constructor(client: any) {
     this.client = client;
