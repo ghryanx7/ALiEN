@@ -1,7 +1,7 @@
 import { addGlobalAfk, addServerAfk } from "../../api/db/premium.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Afk extends AvonCommand {
+export default class Afk extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "afk";
