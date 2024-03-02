@@ -1,17 +1,17 @@
 import { Client, Partials } from "discord.js";
-import AvonConfig from "../config/Config.js";
-import AvonEmoji from "../config/Emoji.js";
-import AvonShoukaku from "../api/Shoukaku.js";
-import AvonApi from "../api/Api.js";
-import AvonEvents from "./Events.js";
-import AvonCommands from "./Commands.js";
+import ALiENConfig from "../config/Config.js";
+import ALiENEmoji from "../config/Emoji.js";
+import ALiENShoukaku from "../api/Shoukaku.js";
+import ALiENApi from "../api/Api.js";
+import ALiENEvents from "./Events.js";
+import ALiENCommands from "./Commands.js";
 import { ClusterClient, getInfo } from "discord-hybrid-sharding";
-import AvonUtils from "./Utils.js";
-import AvonLogger from "./Logger.js";
-import AvonSpotify from "../api/Spotify.js";
-import AvonKazagumo from "../api/Kazagumo.js";
+import ALiENUtils from "./Utils.js";
+import ALiENLogger from "./Logger.js";
+import ALiENSpotify from "../api/Spotify.js";
+import ALiENKazagumo from "../api/Kazagumo.js";
 
-export default class Avon extends Client {
+export default class ALiEN extends Client {
   [x: string]: any;
   constructor() {
     super({
@@ -38,17 +38,17 @@ export default class Avon extends Client {
       shards: getInfo().SHARD_LIST,
       shardCount: getInfo().TOTAL_SHARDS,
     });
-    this.config = new AvonConfig();
-    this.emoji = new AvonEmoji(this);
-    this.shoukaku = new AvonShoukaku(this);
-    this.kazagumo = new AvonKazagumo(this);
-    this.spotify = new AvonSpotify(this);
+    this.config = new ALiENConfig();
+    this.emoji = new ALiENEmoji(this);
+    this.shoukaku = new ALiENShoukaku(this);
+    this.kazagumo = new ALiENKazagumo(this);
+    this.spotify = new ALiENSpotify(this);
     this.cluster = new ClusterClient(this);
-    this.logger = new AvonLogger(this);
-    this.utils = new AvonUtils(this);
-    this.api = new AvonApi(this);
-    this.events = new AvonEvents(this).loadEvents();
-    this.commands = new AvonCommands(this).loadCommands();
+    this.logger = new ALiENLogger(this);
+    this.utils = new ALiENUtils(this);
+    this.api = new ALiENApi(this);
+    this.events = new ALiENEvents(this).loadEvents();
+    this.commands = new ALiENCommands(this).loadCommands();
   }
   start() {
     return super.login(this.config.token);
