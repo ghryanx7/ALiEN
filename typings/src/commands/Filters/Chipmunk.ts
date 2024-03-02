@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Chipmunk extends AvonCommand {
+export default class Chipmunk extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "chipmunk";
