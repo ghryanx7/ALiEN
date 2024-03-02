@@ -1,7 +1,7 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import { cpu } from "systeminformation";
 import { cpus, totalmem } from "node:os";
-export default class Stats extends AvonCommand {
+export default class Stats extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "stats";
@@ -15,7 +15,7 @@ export default class Stats extends AvonCommand {
         .setTitle(`${this.client.user.username} Stats`)
         .addFields([
           {
-            name: `__Avon Information__`,
+            name: `__ALiEN Information__`,
             value: `Bot's Mention: ${this.client.user}\nBot's Tag: ${
               this.client.user.tag
             }\nBot's Version: 2.1.0\nTotal Servers: ${await this.client.cluster
