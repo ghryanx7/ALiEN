@@ -4,7 +4,7 @@ import {
   ButtonStyle,
   EmbedBuilder,
 } from "discord.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import {
   addManagement,
   getManagement,
@@ -15,7 +15,7 @@ import {
 import pkg from "lodash";
 const { chunk } = pkg;
 
-export default class AvonManagement extends AvonCommand {
+export default class ALiENManagement extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "management";
