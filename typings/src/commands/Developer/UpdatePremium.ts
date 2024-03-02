@@ -1,4 +1,4 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import ms from "ms";
 import { updatePrem } from "../../api/db/premium.js";
 const tiers = [
@@ -11,7 +11,7 @@ const tiers = [
   "gold_tier",
   "diamond_tier",
 ];
-export default class UpdatePremium extends AvonCommand {
+export default class UpdatePremium extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "updatePremium";
