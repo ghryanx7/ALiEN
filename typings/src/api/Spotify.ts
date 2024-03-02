@@ -1,5 +1,5 @@
 import { LavasfyClient } from "lavasfy";
-export default class AvonSpotify extends LavasfyClient {
+export default class ALiENSpotify extends LavasfyClient {
   constructor(client: any) {
     super(
       {
