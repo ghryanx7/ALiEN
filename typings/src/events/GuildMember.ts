@@ -1,6 +1,6 @@
-import AvonEvent from "../base/AvonEvent.js";
+import ALiENEvent from "../base/ALiENEvent.js";
 
-export default class GuildMemberEvent extends AvonEvent {
+export default class GuildMemberEvent extends ALiENEvent {
     [x: string]: any;
     constructor(client: any) {
         super(client);
