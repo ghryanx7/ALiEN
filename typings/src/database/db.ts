@@ -1,6 +1,6 @@
 import Database from "better-sqlite3";
 
-export default class AvonDatabase extends Database {
+export default class ALiENDatabase extends Database {
   constructor(path: string) {
     super(`./build/src/database/${path}`, {
       fileMustExist: false,
