@@ -1,7 +1,7 @@
-import Avon from "./structures/Client.js";
-import AvonConfig from "./config/Config.js";
-const Config = new AvonConfig();
-const client = new Avon();
+import ALiEN from "./structures/Client.js";
+import ALiENConfig from "./config/Config.js";
+const Config = new ALiENConfig();
+const client = new ALiEN();
 client.start();
 
 // import { AutoPoster } from "topgg-autoposter";
