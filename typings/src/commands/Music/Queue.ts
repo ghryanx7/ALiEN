@@ -1,8 +1,8 @@
 import pkg from "lodash";
 const { chunk } = pkg;
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Queue extends AvonCommand {
+export default class Queue extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "queue";
