@@ -1,4 +1,4 @@
-export default class AvonTrack extends Object {
+export default class ALiENTrack extends Object {
   encoded: string;
   track: string;
   info: object;
