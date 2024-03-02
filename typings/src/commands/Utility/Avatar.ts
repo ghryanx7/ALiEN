@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import axios from "axios";
-export default class AvonAvatar extends AvonCommand {
+export default class ALiENAvatar extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "avatar";
