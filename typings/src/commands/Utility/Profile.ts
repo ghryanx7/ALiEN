@@ -1,4 +1,4 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import {
   getCount,
   getPremServerList,
@@ -7,7 +7,7 @@ import {
 import Badges from "./Badges.js";
 import axios from "axios";
 const badge = new Badges();
-export default class Profile extends AvonCommand {
+export default class Profile extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "profile";
@@ -86,7 +86,7 @@ export default class Profile extends AvonCommand {
         let em = this.client.utils
           .premiumEmbed(message.guildId)
           .setDescription(
-            `__**Avon Achievements**__\n[\`No Badges Available\`](${this.client.config.voteUrl})\nKindly Join Our **[Support Server](${this.client.config.server})** to get some **[Badges](${this.client.config.server})** on your Profile!\n\n__**Premium Info**__\n${premiumInfo}`
+            `__**ALiEN Achievements**__\n[\`No Badges Available\`](${this.client.config.voteUrl})\nKindly Join Our **[Support Server](${this.client.config.server})** to get some **[Badges](${this.client.config.server})** on your Profile!\n\n__**Premium Info**__\n${premiumInfo}`
           )
           .setAuthor({
             name: `${this.client.user.username}`,
@@ -131,21 +131,21 @@ export default class Profile extends AvonCommand {
       let punit = mem?.roles;
 
       if (user.id === "765841266181144596")
-        badges += `\n<:owner:1073672248885518597> **[Punit](https://discord.com/users/765841266181144596)**`;
+        badges += `\n<:owner:1073672248885518597> **[RY4N](https://discord.com/users/1085376019445321829)**`;
       if (user.id === "785708354445508649")
-        badges += `\n<:owner:1073672248885518597> **[Rihan](https://discord.com/users/785708354445508649)**`;
+        badges += `\n<:owner:1073672248885518597> **[RiN](https://discord.com/users/1210196068969615382)**`;
       if (user.id === "259176352748404736")
-        badges += `\n<:owner:1073672248885518597> **[Sumit](https://discord.com/users/259176352748404736)**`;
+        badges += `\n<:owner:1073672248885518597> **[](https://discord.com/users/)**`;
       if (user.id === "735003878424313908")
-        badges += `\n<:owner:1073672248885518597> **[Rohit](https://discord.com/users/735003878424313908)**`;
+        badges += `\n<:owner:1073672248885518597> **[](https://discord.com/users/)**`;
       if (user.id === "323429313032486922")
-        badges += `\n<:owner:1073672248885518597> **[Alone](https://discord.com/users/323429313032486922)**`;
+        badges += `\n<:owner:1073672248885518597> **[](https://discord.com/users/)**`;
       if (user.id === "218151216650256384")
-        badges += `\n<:owner:1073672248885518597> **[Invisible](https://discord.com/users/218151216650256384)**`;
+        badges += `\n<:owner:1073672248885518597> **[](https://discord.com/users/)**`;
       if (user.id === "1043843871701999626")
-        badges += `\n<:owner:1073672248885518597> **[Cotu](https://discord.com/users/1043843871701999626)**`;
+        badges += `\n<:owner:1073672248885518597> **[](https://discord.com/users/)**`;
       if (user.id === "1086577604947103764")
-        badges += `\n<:owner:1073672248885518597> **[Leon](https://discord.com/users/1086577604947103764)**`;
+        badges += `\n<:owner:1073672248885518597> **[](https://discord.com/users/1086577604947103764)**`;
 
       if (punit?.includes(badge.developer))
         badges += `\n${this.client.emoji.badges.dev} **Developer**`;
@@ -207,7 +207,7 @@ export default class Profile extends AvonCommand {
         .setTitle(`${user.username}'s Profile`)
         .setURL(`https://discord.com/users/${user.id}`)
         .setDescription(
-          `__**Avon Achievements**__\n${badges}\n\n__**Premium Info**__\n${premiumInfo}`
+          `__**ALiEN Achievements**__\n${badges}\n\n__**Premium Info**__\n${premiumInfo}`
         )
         .setThumbnail(user.displayAvatarURL({ dynamic: true }));
 
