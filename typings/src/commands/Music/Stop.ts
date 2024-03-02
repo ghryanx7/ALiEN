@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Stop extends AvonCommand {
+export default class Stop extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "stop";
@@ -47,10 +47,10 @@ export default class Stop extends AvonCommand {
       }
 
       dispatcher.data
-        .get("Avon")
+        .get("ALiEN")
         ?.delete()
         .catch(() => {});
-      dispatcher.data.delete("Avon");
+      dispatcher.data.delete("ALiEN");
 
       dispatcher.player.stopTrack();
 
