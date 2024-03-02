@@ -1,4 +1,4 @@
-export default class AvonConfig extends Object {
+export default class ALiENConfig extends Object {
   token: string;
   prefix: string;
   nodes: object[];
@@ -17,12 +17,12 @@ export default class AvonConfig extends Object {
     super();
     this.token =
       "";
-    this.prefix = "+";
+    this.prefix = "-";
     this.nodes = [
       {
-        name: `Avon`,
-        url: `localhost:2333`,
-        auth: `avonbot`,
+        name: `ALiEN`,
+        url: `lavalink.techpoint.world:80`,
+        auth: `techpoint`,
         secure: false,
       },
     ];
@@ -35,23 +35,23 @@ export default class AvonConfig extends Object {
         "",
       Cmds: "",
     };
-    this.server = "https://discord.gg/avonbot";
+    this.server = "https://discord.gg/VjjJ24BFyH";
     this.spotiId = "";
     this.spotiSecret = "";
-    this.owners = ["765841266181144596"];
+    this.owners = [""];
     this.color = "#ff0000";
     this.supportId = "";
     this.spotiNodes = [
       {
-        id: `Avon`,
-        host: `localhost`,
-        port: 2333,
-        password: `avonbot`,
+        id: `ALiEN`,
+        host: `lavalink.techpoint.world`,
+        port: 80,
+        password: `techpoint`,
         secure: false,
       },
     ];
-    this.voteUrl = "https://top.gg/bot/904317141866647592/vote";
+    this.voteUrl = "https://top.gg/bot/";
     this.setupBgLink =
-      "";
+      "https://cdn.discordapp.com/attachments/1174969112808656916/1212873973768130580/20230805_160228.png";
   }
 }
