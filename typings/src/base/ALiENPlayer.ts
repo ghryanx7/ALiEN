@@ -1,6 +1,6 @@
 import { createCanvas, loadImage } from "@napi-rs/canvas";
 
-export default class AvonPlayer {
+export default class ALiENPlayer {
   client: any;
   constructor(client: any) {
     this.client = client;
