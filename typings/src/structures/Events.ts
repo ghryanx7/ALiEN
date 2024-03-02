@@ -1,6 +1,6 @@
 import * as fs from "fs";
 
-export default class AvonEvents {
+export default class ALiENEvents {
   client: any;
   load: boolean;
   constructor(client: any) {
