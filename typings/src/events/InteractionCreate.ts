@@ -1,11 +1,11 @@
 import { addFavs, removeFavs } from "../api/db/premium.js";
-import AvonEvent from "../base/AvonEvent.js";
+import ALiENEvent from "../base/ALiENEvent.js";
 import Topgg from "@top-gg/sdk";
-import AvonConfig from "../config/Config.js";
-const Config = new AvonConfig();
+import ALiENConfig from "../config/Config.js";
+const Config = new ALiENConfig();
 const voteApi = new Topgg.Api(Config.voteApi);
 
-export default class AvonInteraction extends AvonEvent {
+export default class ALiENInteraction extends ALiENEvent {
   [x: string]: any;
   constructor(client: any) {
     super(client);
