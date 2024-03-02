@@ -1,7 +1,7 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle } from "discord.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import * as util from "util";
-export default class AvonEval extends AvonCommand {
+export default class ALiENEval extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "eval";
