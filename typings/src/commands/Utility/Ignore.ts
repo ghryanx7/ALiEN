@@ -1,7 +1,7 @@
 import { MessageManager } from "discord.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Ignore extends AvonCommand {
+export default class Ignore extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "ignore";
