@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Help extends AvonCommand {
+export default class Help extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "help";
@@ -23,7 +23,7 @@ export default class Help extends AvonCommand {
             iconURL: this.client.user.displayAvatarURL(),
           })
           .setFooter({
-            text: `Made with 🔥 By Avon Development`,
+            text: `Made with 🔥 By ALiEN Development`,
             iconURL: message.author.displayAvatarURL({ dynamic: true }),
           })
           .setTitle(`${this.client.user.username}'s Help`)
@@ -271,7 +271,7 @@ export default class Help extends AvonCommand {
                           },
                         ])
                         .setFooter({
-                          text: `Made with 🔥 By Avon Development`,
+                          text: `Made with 🔥 By ALiEN Development`,
                           iconURL: message.guild.iconURL({ dynamic: true }),
                         })
                         .setThumbnail(this.client.user.displayAvatarURL()).setImage(`https://media.discordapp.net/attachments/1088387181665591346/1137284441568444476/AVON_BANNER_3.png?width=1440&height=360`)
