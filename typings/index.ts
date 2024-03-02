@@ -4,9 +4,9 @@ import {
   ReClusterManager,
   messageType,
 } from "discord-hybrid-sharding";
-import AvonConfig from "./src/config/Config.js";
-const Config = new AvonConfig();
-const manager = new ClusterManager("./build/src/avon.js", {
+import ALiENConfig from "./src/config/Config.js";
+const Config = new ALiENConfig();
+const manager = new ClusterManager("./build/src/alien.js", {
   totalClusters: "auto",
   totalShards: "auto",
   respawn: true,
