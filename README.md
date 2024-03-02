@@ -1,8 +1,8 @@
 # ALiEN - Discord Music Bot
 
-[![GitHub stars](https://img.shields.io/github/stars/Punit9464/Avon.svg)](https://github.com/Punit9464/Avon/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/Punit9464/Avon.svg)](https://github.com/Punit9464/Avon/issues)
-[![GitHub license](https://img.shields.io/github/license/Punit9464/Avon.svg)](https://github.com/Punit9464/Avon/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ghryanx7/ALiEN.svg)](https://github.com/ghryanx7/ALiEN/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/ghryanx7/ALiEN.svg)](https://github.com/ghryanx7/ALiEN/issues)
+[![GitHub license](https://img.shields.io/github/license/ghryanx7/ALiEN.svg)](https://github.com/ghryanx7/ALiEN/blob/main/LICENSE)
 
 ALiEN is a powerful and customizable Discord music bot framework that simplifies the process of creating feature-rich music bots for your Discord server. Whether you're a seasoned developer or just starting with Discord bot development, ALiEN provides a solid foundation for building a music bot tailored to your needs.
 
