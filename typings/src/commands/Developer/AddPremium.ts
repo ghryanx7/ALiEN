@@ -1,5 +1,5 @@
 import { EmbedBuilder } from "discord.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import "ms";
 import ms from "ms";
 import { addPrem } from "../../api/db/premium.js";
@@ -13,7 +13,7 @@ const tiers = [
   "gold_tier",
   "diamond_tier",
 ];
-export default class AddPremium extends AvonCommand {
+export default class AddPremium extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "addPremium";
