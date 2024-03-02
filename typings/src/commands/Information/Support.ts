@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Support extends AvonCommand {
+export default class Support extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "support";
