@@ -1,6 +1,6 @@
-import AvonCommand from "../base/AvonCommand.js";
+import ALiENCommand from "../base/ALiENCommand.js";
 
-export default class VoiceState extends AvonCommand {
+export default class VoiceState extends ALiENCommand {
   [x: string]: any;
   constructor(client: any) {
     super(client);
