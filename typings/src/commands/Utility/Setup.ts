@@ -5,9 +5,9 @@ import {
   messageLink,
 } from "discord.js";
 import { addHex, getHex } from "../../api/db/embeds.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Setup extends AvonCommand {
+export default class Setup extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "setup";
