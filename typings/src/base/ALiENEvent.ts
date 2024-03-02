@@ -1,6 +1,6 @@
 import EventEmitter from "events";
 
-export default class AvonEvent extends EventEmitter {
+export default class ALiENEvent extends EventEmitter {
   public client: any;
   public name?: string;
   constructor(client: any) {
