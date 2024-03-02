@@ -1,7 +1,7 @@
 import { ChannelType, PermissionFlagsBits, WebhookClient } from "discord.js";
-import AvonEvent from "../base/AvonEvent.js";
+import ALiENEvent from "../base/ALiENEvent.js";
 
-export default class GuildCreate extends AvonEvent {
+export default class GuildCreate extends ALiENEvent {
   [x: string]: any;
   constructor(client: any) {
     super(client);
