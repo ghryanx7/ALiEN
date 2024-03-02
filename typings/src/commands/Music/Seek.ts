@@ -1,7 +1,7 @@
 import ms from "ms";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Seek extends AvonCommand {
+export default class Seek extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "seek";
