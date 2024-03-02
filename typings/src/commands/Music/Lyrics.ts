@@ -1,7 +1,7 @@
 import { Google } from "@flytri/lyrics-finder";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Lyrics extends AvonCommand {
+export default class Lyrics extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "lyrics";
