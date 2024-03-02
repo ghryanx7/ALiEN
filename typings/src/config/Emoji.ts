@@ -1,139 +1,139 @@
-export default class AvonEmoji extends Object {
+export default class ALiENEmoji extends Object {
   [x: string]: any;
   constructor(client: any) {
     super();
-    this.tick = "<:avontick:1129741544694485024>";
-    this.cross = "<:avoncross:1129741483998724206>";
-    this.playing = "<a:nowplaying:1129817857727942738>";
-    this.exclamation = "<:avonexe:1129744498449207296> ";
-    this.queue = "<:avonquaie:1129744532074922014> ";
-    this.info = "<:avoninfo2:1129751345226850375> ";
-    this.defSearch = "<a:premium_avon:1064927294730272939>";
-    this.premium = "<a:premium_avon:1064927294730272939>";
-    this.invite = "<:T_RedInvite:1130724489911599125>";
+    this.tick = "<:tick:1206111660658659398>";
+    this.cross = "<:cross:1206111657143566396>";
+    this.playing = "<:loop:1206126517277433856>";
+    this.exclamation = "<:help:1206111690996056125> ";
+    this.queue = "<:loop:1206126517277433856>";
+    this.info = "<:info:1206111699887849612>";
+    this.defSearch = "<:search:1206111681768460318>";
+    this.premium = "<:fire:1206111676399755304>";
+    this.invite = "<:invite:1206111688248660019>";
     this.support = "<:Support:1130724620757127189>";
     this.spotiSearch = "<a:spotify:1129816498853138502>";
     this.deezSearch = "<:Deezer_avon:1065634451603861545>";
     this.vote = "<:vote_avon:1064932747400982588>";
-    this.soundSearch = "<:Soundcloud_avon:1065634569262473277>";
+    this.soundSearch = "<:search:1206111681768460318>";
     this.badges = {
-      named: "<:owner:1073672248885518597>",
-      owner: "<:avonowner:1129738528209780836>",
+      named: "<:owner:1206111674034159646>",
+      owner: "<:owner:1206111674034159646>",
       dev: "<:avondev:1129738531527458856>",
       admin: "<:avonadmin:1129738535952449628>",
       codev: "<:avoncodev:1129738585713692682>",
       author: "<:author_avon:1129990460128108554>",
-      friend: "<:avonfriend:1129744517080301638>",
-      vip: "<:avonvip:1129741519243460698>",
-      premiumUser: "<:avonpremium:1129741537731948544>",
-      mod: "<:avonmod:1129741496858447982>",
-      staff: "<:avonstaff:1129741494157328486>",
-      supporter: "<:avonsupporter:1129741524536672378>",
-      user: "<:avonmembers:1129741529448185917>",
+      friend: "<:fire:1206111676399755304>",
+      vip: "<:fire:1206111676399755304>",
+      premiumUser: "<:fire:1206111676399755304>",
+      mod: "<:support:1206112648693940234>",
+      staff: "<:moderator:1206111855383154698>",
+      supporter: "<:moderator:1206111855383154698>",
+      user: "<:moderator:1206111855383154698>",
     };
     this.helpMenu = {
-      music: "<:Avon_Music:1130897739086045208>",
-      home: "<:Avon_Home:1131253449158307850>",
-      filters: "<:Avon_Filters:1130897583242485891>",
-      info: "<:Avon_Info:1130897649000783893>",
-      utility: "<:Avon_Utility:1130897694605459497>",
-      allCommands: "<:Avon_AllCommands:1130897613131108402>",
+      music: "<:undeaf:1206111837398241340>",
+      home: "<:home:1206168909447958558>",
+      filters: "<:leaves:1206111849079377950>",
+      info: "<:info:1206111699887849612>",
+      utility: "<:stars:1206111663703457845>",
+      allCommands: "<:apps:1206111685082087464>",
     };
     this.setup = {
-      pause: "<:avonpause:1129738547176419348>",
-      resume: "<:avonplay:1129738549739147294>",
-      skip: "<:avonslip:1129744547644190770>",
+      pause: "<:pause:1206126307642183700>",
+      resume: "<:NEXT1:1206116693781254184>",
+      skip: "<:NEXT1:1206116693781254184>",
       previous: "<:avonright:1129738558660423680>",
       shuffle: "<:avonsuffle:1129751417138196623>",
-      author: "<a:8accountsolid1:1094833733984604211>",
-      nowPlaying: "<a:77pausesolid:1094833726753603735>",
-      requester: "<a:19booksolid1:1094833798941786192>",
-      duration: "<a:67clocksolid1:1094833814204846180>",
-      stop: "<:avonstop:1129747306040791180>",
-      loop: "<:avonrequest:1129747309094260837>",
+      author: "<:bot:1206143418280190012>",
+      nowPlaying: "<:loop:1206126517277433856>",
+      requester: "<:bot:1206143418280190012>",
+      duration: "<:clock:1206111679373647932>",
+      stop: "<:pause:1206126307642183700>",
+      loop: "<:loop:1206126517277433856>",
       volLow: "<:avonvolminus:1129744510814011543>",
       volHigh: "<:avonvol:1129738595603857489>",
       fav: "<:avonfav:1129751420099375144>",
-      autoplay: "<a:botautoplay:1105072801779568701>",
-      filters: "<:avonfilter:1129751347869265920>",
+      autoplay: "<:loop:1206126517277433856>",
+      filters: "<:leaves:1206111849079377950>",
     };
-    this.avonNew = {
+    this.alienNew = {
       emote: "<a:botplaying:1129819082343063664>",
-      nowPlaying: "<a:botplaying:1129819082343063664>",
-      requester: "<:avonrequest:1129747309094260837>",
-      duration: "<:avontime:1129747295726997545>",
-      author: "<:author_avon:1129990460128108554>",
-      pause: "<:Pause:1129824564386467991>",
-      resume: "<:resume:1129824021618380801>",
-      skip: "<:forward10:986893749005217812>",
+      nowPlaying: "<:loop:1206126517277433856>",
+      requester: "<:bot:1206143418280190012>",
+      duration: "<:clock:1206111679373647932>",
+      author: "<:bot:1206143418280190012>",
+      pause: "<:pause:1206126307642183700>",
+      resume: "<:NEXT1:1206116693781254184>",
+      skip: "<:NEXT1:1206116693781254184>",
       fav: "",
       previous: "<:Avon_Previous:1137298056283430982>",
-      stop: "<:stop:1129823823399751690>",
+      stop: "<:pause:1206126307642183700>",
     };
     this.spotify = {
       emote: "<a:spotify:1129816498853138502>",
       filters: "<:filter:1100222067938435152>",
-      nowPlaying: "<a:spotify:1129816498853138502>",
-      requester: "<:avonrequest:1129747309094260837>",
-      duration: "<:avontime:1129747295726997545>",
-      pause: "<:ss_pause:1099927332204073011>",
+      nowPlaying: "<:loop:1206126517277433856>",
+      requester: "<:bot:1206143418280190012>",
+      duration: "<:clock:1206111679373647932>",
+      pause: "<:pause:1206126307642183700>",
       author: "<:author_avon:1066716583365447720>",
-      resume: "<:resume:1099927448734408744>",
-      stop: "<:ss_stop:1099927856651436082>",
-      loop: "<:loop:1129823572991426651>",
+      resume: "<:NEXT1:1206116693781254184>",
+      stop: "<:pause:1206126307642183700>",
+      loop: "<:loop:1206126517277433856>",
       shuffle: "<:shuffle:1139766210213462066>",
       forward: "<:backward:1129823401175949322>",
       backward: "<:forward10:1129823372008759327>",
       volLow: "<:lower_vol:1139766602527690902>",
       volHigh: "<:higher_vol:1139766719917854751>",
       previous: "<:Avon_Previous:1137298056283430982>",
-      skip: "<:last:1139768093766336632>",
+      skip: "<:NEXT1:1206116693781254184>",
     };
     this.special = {
       emote: "<a:premium_avon:1064927294730272939>",
-      nowPlaying: "<a:premium_avon:1064927294730272939>",
-      requester: "<:avonrequest:1129747309094260837>",
-      duration: "<:avontime:1129747295726997545>",
-      pause: "<:ss_pause:1099927332204073011>",
+      nowPlaying: "<:loop:1206126517277433856>",
+      requester: "<:bot:1206143418280190012>",
+      duration: "<:clock:1206111679373647932>",
+      pause: "<:pause:1206126307642183700>",
       author: "<:author_avon:1066716583365447720>",
       resume: "<:resume:1099927448734408744>",
-      stop: "<:ss_stop:1099927856651436082>",
-      loop: "<:loop:1129823572991426651>",
+      stop: "<:pause:1206126307642183700>",
+      loop: "<:loop:1206126517277433856>",
       shuffle: "<:shuffle:1139766210213462066>",
       forward: "<:backward:1129823401175949322>",
       backward: "<:forward10:1129823372008759327>",
       volLow: "<:lower_vol:1139766602527690902>",
       volHigh: "<:higher_vol:1139766719917854751>",
       previous: "<:Avon_Previous:1137298056283430982>",
-      skip: "<:last:1139768093766336632>",
+      skip: "<:NEXT1:1206116693781254184>",
     };
     this.noButtons = {
       emote: "<a:botplaying:1129819082343063664>",
-      nowPlaying: "<a:botplaying:1129819082343063664>",
-      author: "<:author_avon:1066716583365447720>",
-      requester: "<:avonrequest:1129747309094260837>",
-      duration: "<:avontime:1129747295726997545>",
+      nowPlaying: "<:loop:1206126517277433856>",
+      author: "<:bot:1206143418280190012>",
+      requester: "<:bot:1206143418280190012>",
+      duration: "<:clock:1206111679373647932>",
       filters: "<:filter:1100222067938435152>",
     };
     this.simple = {
       emote: "<a:nowplaying:1129817857727942738>",
-      nowPlaying: "<a:nowplaying:1129817857727942738>",
-      requester: "<:avonrequest:1129747309094260837>",
-      author: "<:author_avon:1066716583365447720>",
-      duration: "<:avontime:1129747295726997545>",
+      nowPlaying: "<:loop:1206126517277433856>",
+      requester: "<:bot:1206143418280190012>",
+      author: "<:bot:1206143418280190012>",
+      duration: "<:clock:1206111679373647932>",
       filters: "<:filter:1100222067938435152>",
-      pause: "<:ss_pause:1099927332204073011>",
-      resume: "<:resume:1099927448734408744>",
-      stop: "<:stop:1129823823399751690>",
-      skip: "<:skip:1099927755342233720>",
+      pause: "<:pause:1206126307642183700>",
+      resume: "<:NEXT1:1206116693781254184>",
+      stop: "<:pause:1206126307642183700>",
+      skip: "<:NEXT1:1206116693781254184>",
       loop: "<:loop:1129823572991426651>",
     };
     this.oldStyle = {
       emote: "<a:nowplaying:1129817857727942738>",
-      nowPlaying: "<a:nowplaying:1129817857727942738>",
-      author: "<:author_avon:1129990460128108554>",
-      requester: "<:avonrequest:1129747309094260837>",
-      duration: "<:avontime:1129747295726997545>",
+      nowPlaying: "<:loop:1206126517277433856>",
+      author: "<:bot:1206143418280190012>",
+      requester: "<:bot:1206143418280190012>",
+      duration: "<:clock:1206111679373647932>",
     };
   }
 }
