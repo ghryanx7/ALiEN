@@ -1,7 +1,7 @@
 import { Player } from "shoukaku";
-import AvonDispatcher from "./Dispatcher.js";
+import ALiENDispatcher from "./Dispatcher.js";
 
-export default class AvonApi extends Map {
+export default class ALiENApi extends Map {
   client: any;
   constructor(client: any) {
     super();
@@ -22,7 +22,7 @@ export default class AvonApi extends Map {
         shardId: guild.shardId,
         deaf: true,
       });
-      const dispatcher = new AvonDispatcher(
+      const dispatcher = new ALiENDispatcher(
         this.client,
         guild,
         channel,
@@ -48,7 +48,7 @@ export default class AvonApi extends Map {
       shardId: guild.shardId,
       deaf: true,
     });
-    const dispatcher = new AvonDispatcher(this.client, guild, txt, player);
+    const dispatcher = new ALiENDispatcher(this.client, guild, txt, player);
     this.set(guild.id, dispatcher);
     return dispatcher;
   }
