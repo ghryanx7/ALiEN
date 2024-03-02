@@ -1,6 +1,6 @@
-import AvonDatabase from "../../database/db.js";
+import ALiENDatabase from "../../database/db.js";
 
-const db = new AvonDatabase("dj.sqlite");
+const db = new ALiENDatabase("dj.sqlite");
 
 function createDb(): void {
   db.prepare(
