@@ -1,4 +1,4 @@
-export default class AvonCommand {
+export default class ALiENCommand {
   public client: any;
   public name?: string;
   public exec?: any;
