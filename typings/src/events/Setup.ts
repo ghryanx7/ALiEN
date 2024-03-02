@@ -1,8 +1,8 @@
-import AvonDispatcher from "../api/Dispatcher.js";
+import ALiENDispatcher from "../api/Dispatcher.js";
 import { getPrefix } from "../api/db/prefix.js";
-import AvonEvent from "../base/AvonEvent.js";
+import ALiENEvent from "../base/ALiENEvent.js";
 
-export default class AvonSetup extends AvonEvent {
+export default class ALiENSetup extends ALiENEvent {
   [x: string]: any;
   constructor(client: any) {
     super(client);
