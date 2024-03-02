@@ -1,8 +1,8 @@
 import { getGlobalNp, getServerNpDb } from "../../api/db/prefix.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import pkg from "lodash";
 const { chunk } = pkg;
-export default class AvonNoprefix extends AvonCommand {
+export default class ALiENNoprefix extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "noprefix";
