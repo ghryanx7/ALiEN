@@ -1,8 +1,8 @@
 import { PermissionFlagsBits } from "discord.js";
-import AvonDispatcher from "../../api/Dispatcher.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENDispatcher from "../../api/Dispatcher.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Connect extends AvonCommand {
+export default class Connect extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "connect";
@@ -57,7 +57,7 @@ export default class Connect extends AvonCommand {
           shardId: message.guild.shardId,
           deaf: true,
         });
-        const dispatcher = new AvonDispatcher(
+        const dispatcher = new ALiENDispatcher(
           this.client,
           message.guild,
           message.channel,
