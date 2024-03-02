@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class Loop extends AvonCommand {
+export default class Loop extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "loop";
