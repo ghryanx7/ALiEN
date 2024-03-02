@@ -1,6 +1,6 @@
-import AvonDatabase from "../../database/db.js";
+import ALiENDatabase from "../../database/db.js";
 
-const db = new AvonDatabase("settings.sqlite");
+const db = new ALiENDatabase("settings.sqlite");
 
 function createAutoplay() {
   db.prepare(
