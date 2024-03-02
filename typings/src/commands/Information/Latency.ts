@@ -1,6 +1,6 @@
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 
-export default class AvonLatency extends AvonCommand {
+export default class ALiENLatency extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "latency";
