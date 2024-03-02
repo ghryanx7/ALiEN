@@ -1,5 +1,5 @@
-import AvonDatabase from "../../database/db.js";
-const db = new AvonDatabase("prefix.sqlite");
+import ALiENDatabase from "../../database/db.js";
+const db = new ALiENDatabase("prefix.sqlite");
 
 function createDb(): void {
   let run = db.prepare(`CREATE TABLE IF NOT EXISTS PREFIXDB(
