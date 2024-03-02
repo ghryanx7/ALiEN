@@ -13,10 +13,10 @@ import {
   incrementCount,
   removeServerPrem,
 } from "../../api/db/premium.js";
-import AvonCommand from "../../base/AvonCommand.js";
+import ALiENCommand from "../../base/ALiENCommand.js";
 import { manageMent } from "../../api/db/management.js";
 
-export default class Premium extends AvonCommand {
+export default class Premium extends ALiENCommand {
   constructor(client: any) {
     super(client);
     this.name = "premium";
