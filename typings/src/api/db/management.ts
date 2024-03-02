@@ -1,6 +1,6 @@
-import AvonDatabase from "../../database/db.js";
+import ALiENDatabase from "../../database/db.js";
 
-const db = new AvonDatabase("management.sqlite");
+const db = new ALiENDatabase("management.sqlite");
 
 export {
   manageMent,
