@@ -6,9 +6,9 @@ import {
   removeGlobalAfk,
   removeServerAfk,
 } from "../api/db/premium.js";
-import AvonEvent from "../base/AvonEvent.js";
+import ALiENEvent from "../base/ALiENEvent.js";
 
-export default class AvonAfk extends AvonEvent {
+export default class ALiENAfk extends ALiENEvent {
   [x: string]: any;
   constructor(client: any) {
     super(client);
