@@ -102,7 +102,7 @@ export default class ALiENDispatcher {
         }
       }
       let setting = this.client.utils.getPlayerMode(this.guild.id);
-      if (setting === "avon-old") {
+      if (setting === "alien-old") {
         let em = this.client.utils
           .premiumEmbed(this.guild.id)
           .setDescription(
@@ -125,14 +125,14 @@ export default class ALiENDispatcher {
           `custom_id`,
           `Pause`,
           3,
-          `avon_pause`
+          `alien_pause`
         );
         let b3 = this.client.utils.button(`custom_id`, `Loop`, 1, `avon_loop`);
         let b4 = this.client.utils.button(
           `custom_id`,
           `Previous`,
           2,
-          `avon_previous`
+          `alien_previous`
         );
         let b5 = this.client.utils.button(`custom_id`, `Skip`, 2, `avon_skip`);
         let row = this.client.utils.actionRow([b1, b2, b3, b4, b5]);
@@ -143,7 +143,7 @@ export default class ALiENDispatcher {
               components: [row],
             })
             .then((x: any) => {
-              this.data.set("Avon", x);
+              this.data.set("ALiEN", x);
             });
         return;
       }
@@ -170,14 +170,14 @@ export default class ALiENDispatcher {
           `custom_id`,
           `Pause`,
           3,
-          `avon_pause`
+          `alien_pause`
         );
         let b3 = this.client.utils.button(`custom_id`, `Loop`, 1, `avon_loop`);
         let b4 = this.client.utils.button(
           `custom_id`,
           `Previous`,
           2,
-          `avon_previous`
+          `alien_previous`
         );
         let b5 = this.client.utils.button(`custom_id`, `Skip`, 2, `avon_skip`);
         let row = this.client.utils.actionRow([b1, b2, b3, b4, b5]);
@@ -187,10 +187,10 @@ export default class ALiENDispatcher {
               embeds: [em],
               components: [row],
             })
-            .then((x: any) => this.data.set("Avon", x));
+            .then((x: any) => this.data.set("ALiEN", x));
         return;
       }
-      if (setting === "avon-no") {
+      if (setting === "alien-no") {
         let em = this.client.utils
           .premiumEmbed(this.guild.id)
           .setAuthor({
@@ -263,7 +263,7 @@ export default class ALiENDispatcher {
               embeds: [em],
               components: [row],
             })
-            .then((x: any) => this.data.set("Avon", x));
+            .then((x: any) => this.data.set("ALiEN", x));
         return;
       }
 
@@ -291,7 +291,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_previous`,
+          `alien_previous`,
           null,
           this.client.emoji.special.previous
         );
@@ -299,7 +299,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_shuffle`,
+          `alien_shuffle`,
           null,
           this.client.emoji.special.shuffle
         );
@@ -307,7 +307,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_pause`,
+          `alien_pause`,
           null,
           this.client.emoji.special.pause
         );
@@ -323,7 +323,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_skip`,
+          `alien_skip`,
           null,
           this.client.emoji.special.skip
         );
@@ -331,7 +331,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_volLow`,
+          `alien_volLow`,
           null,
           this.client.emoji.special.volLow
         );
@@ -339,7 +339,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_backward`,
+          `alien_backward`,
           null,
           this.client.emoji.special.backward
         );
@@ -347,7 +347,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_stop`,
+          `alien_stop`,
           null,
           this.client.emoji.special.stop
         );
@@ -355,7 +355,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_forward`,
+          `alien_forward`,
           null,
           this.client.emoji.special.forward
         );
@@ -363,7 +363,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           4,
-          `avon_volHigh`,
+          `alien_volHigh`,
           null,
           this.client.emoji.special.volHigh
         );
@@ -376,7 +376,7 @@ export default class ALiENDispatcher {
               embeds: [em],
               components: [row1, row2],
             })
-            .then((x: any) => this.data.set("Avon", x));
+            .then((x: any) => this.data.set("ALiEM", x));
         return;
       }
 
@@ -413,13 +413,13 @@ export default class ALiENDispatcher {
           `Reset Filters`,
           this.client.emoji.simple.filters,
           `Resets all the filters of the player`,
-          `avon_filter_reset`
+          `alien_filter_reset`
         );
         let opt2 = this.client.utils.menuOption(
           `8D`,
           this.client.emoji.simple.filters,
           `Sets Up 8d filter to the player`,
-          `avon_filter_8d`
+          `alien_filter_8d`
         );
         let opt3 = this.client.utils.menuOption(
           `BassBoost`,
@@ -437,7 +437,7 @@ export default class ALiENDispatcher {
           `Vaporwave`,
           this.client.emoji.simple.filters,
           `Sets Vaporwave filter to the player`,
-          `avon_filter_vibrato`
+          `alien_filter_vibrato`
         );
         let options = [opt1, opt2, opt3, opt4, opt5];
         let menu = this.client.utils.menu(`Choose filters`, `help-op`, options);
@@ -447,7 +447,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           2,
-          `avon_pause`,
+          `alien_pause`,
           null,
           this.client.emoji.simple.pause
         );
@@ -455,7 +455,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           2,
-          `avon_skip`,
+          `alien_skip`,
           null,
           this.client.emoji.simple.skip
         );
@@ -463,7 +463,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           2,
-          `avon_loop`,
+          `alien_loop`,
           null,
           this.client.emoji.simple.loop
         );
@@ -471,7 +471,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           2,
-          `avon_stop`,
+          `alien_stop`,
           null,
           this.client.emoji.simple.stop
         );
@@ -491,31 +491,31 @@ export default class ALiENDispatcher {
           `Reset Filters`,
           this.client.emoji.spotify.filters,
           `Resets all the filters of the player`,
-          `avon_filter_reset`
+          `alien_filter_reset`
         );
         let opt2 = this.client.utils.menuOption(
           `8D`,
           this.client.emoji.spotify.filters,
           `Sets Up 8d filter to the player`,
-          `avon_filter_8d`
+          `alien_filter_8d`
         );
         let opt3 = this.client.utils.menuOption(
           `BassBoost`,
           this.client.emoji.spotify.filters,
           `Sets bassboost filter to the player`,
-          `avon_filter_bassboost`
+          `alien_filter_bassboost`
         );
         let opt4 = this.client.utils.menuOption(
           `NightCore`,
           this.client.emoji.spotify.filters,
           `Sets NightCore filter to the player`,
-          `avon_filter_nightcore`
+          `alien_filter_nightcore`
         );
         let opt5 = this.client.utils.menuOption(
           `Vaporwave`,
           this.client.emoji.spotify.filters,
           `Sets Vaporwave filter to the player`,
-          `avon_filter_vibrato`
+          `alien_filter_vibrato`
         );
         let options = [opt1, opt2, opt3, opt4, opt5];
         let menu = this.client.utils.menu(`Choose filters`, `help-op`, options);
@@ -524,7 +524,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_previous`,
+          `alien_previous`,
           null,
           this.client.emoji.spotify.previous
         );
@@ -532,7 +532,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_shuffle`,
+          `alien_shuffle`,
           null,
           this.client.emoji.spotify.shuffle
         );
@@ -540,7 +540,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_pause`,
+          `alien_pause`,
           null,
           this.client.emoji.spotify.pause
         );
@@ -548,7 +548,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_loop`,
+          `alien_loop`,
           null,
           this.client.emoji.spotify.loop
         );
@@ -556,7 +556,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_skip`,
+          `alien_skip`,
           null,
           this.client.emoji.spotify.skip
         );
@@ -564,7 +564,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_volLow`,
+          `alien_volLow`,
           null,
           this.client.emoji.spotify.volLow
         );
@@ -572,7 +572,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_backward`,
+          `alien_backward`,
           null,
           this.client.emoji.spotify.backward
         );
@@ -580,7 +580,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_stop`,
+          `alien_stop`,
           null,
           this.client.emoji.spotify.stop
         );
@@ -588,7 +588,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_forward`,
+          `alien_forward`,
           null,
           this.client.emoji.spotify.forward
         );
@@ -596,7 +596,7 @@ export default class ALiENDispatcher {
           `custom_id`,
           null,
           3,
-          `avon_volHigh`,
+          `alien_volHigh`,
           null,
           this.client.emoji.spotify.volHigh
         );
@@ -638,10 +638,10 @@ export default class ALiENDispatcher {
               embeds: [em],
               components: [row1, row2, row3],
             })
-            .then((x: any) => this.data.set("Avon", x));
+            .then((x: any) => this.data.set("ALiEN", x));
         return;
       }
-      if (setting === `avon-new`) {
+      if (setting === `alien-new`) {
         let em = this.client.utils
           .premiumEmbed(this.guild.id)
           .setDescription(
